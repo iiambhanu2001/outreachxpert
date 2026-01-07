@@ -1,0 +1,29 @@
+<svg width="190" height="40" viewBox="0 0 190 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="accentGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6a5acd"></stop>
+      <stop offset="100%" stop-color="#00b4d8"></stop>
+    </linearGradient>
+  </defs>
+
+  <!-- ICON -->
+  <g transform="translate(0,4)">
+    <path d="M8 24 C16 16, 24 16, 32 8" stroke="#ffffff" stroke-width="2.8" stroke-linecap="round"></path>
+    <path d="M8 8 C16 16, 24 16, 32 24" stroke="#ffffff" stroke-width="2.8" stroke-linecap="round"></path>
+
+    <circle cx="8" cy="8" r="3" fill="url(#accentGradient)"></circle>
+    <circle cx="32" cy="8" r="3" fill="url(#accentGradient)"></circle>
+    <circle cx="8" cy="24" r="3" fill="url(#accentGradient)"></circle>
+    <circle cx="32" cy="24" r="3" fill="url(#accentGradient)"></circle>
+  </g>
+
+  <!-- TEXT -->
+  <text x="52" y="27" font-size="18" font-weight="600" fill="#ffffff" font-family="Poppins, sans-serif" letter-spacing="0.3">
+    Outreach
+  </text>
+
+  <!-- Proper gap before Xpert -->
+  <text x="145" y="27" font-size="18" font-weight="600" fill="url(#accentGradient)" font-family="Poppins, sans-serif">
+    Xpert
+  </text>
+</svg>

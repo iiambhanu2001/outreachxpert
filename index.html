@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>outreachxpert — Next-Gen Marketing Platform</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.11.1/tsparticles.bundle.min.js"></script>
+
+ 
+</head>
+
+<body class="bg-gray-900 text-white relative overflow-x-hidden">
+
+    <nav class="navbar">
+        <img src="assets/logo.svg" class="logo" alt="logo">
+
+       
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#team">Team</a></li>
+        </ul>
+
+
+       
+        <div id="hamburger" class="hamburger md:hidden flex flex-col justify-between w-6 h-5 cursor-pointer">
+            <span class="block h-1 w-full bg-white rounded"></span>
+            <span class="block h-1 w-full bg-white rounded"></span>
+            <span class="block h-1 w-full bg-white rounded"></span>
+        </div>
+    </nav>
+
+   
+    <div id="mobile-menu" class="hidden fixed inset-0 bg-gray-900/95
+         flex-col items-center justify-center space-y-8
+         text-white text-2xl z-[2000]">
+        <a href="#features" class="hover:text-purple-400 transition">Features</a>
+        <a href="#pricing" class="hover:text-purple-400 transition">Pricing</a>
+        <a href="#testimonials" class="hover:text-purple-400 transition">Testimonials</a>
+        <a href="#team" class="hover:text-purple-400 transition">Team</a>
+        <a href="#" class="bg-purple-600 px-6 py-3 rounded-full hover:bg-purple-500 transition">Start Trial</a>
+    </div>
+
+    <!-- HERO with Particles -->
+    <section
+        class="relative h-screen flex flex-col md:flex-row items-center justify-center px-8 md:px-32 overflow-hidden">
+        <div id="tsparticles" class="absolute top-0 left-0 w-full h-full z-0 pointer-events-none"></div>
+
+        <div
+            class="absolute top-0 left-0 w-96 h-96 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 opacity-60 blur-3xl animate-blob">
+        </div>
+        <div
+            class="absolute bottom-0 right-0 w-96 h-96 rounded-full bg-gradient-to-r from-blue-400 to-purple-600 opacity-60 blur-3xl animate-blob animation-delay-2000">
+        </div>
+
+        <div class="hero-text md:w-1/2 z-10 text-center md:text-left" data-aos="fade-up">
+            <h1
+                class="text-6xl md:text-7xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-400">
+                outreachxpert</h1>
+            <p class="mt-6 text-lg md:text-xl max-w-md">Boost your business with intelligent automation, stunning
+                visuals, and powerful insights.</p>
+            <button id="heroTrialBtn"
+                class="mt-8 px-6 py-3 bg-purple-600 rounded-full text-lg hover:bg-purple-500 transition transform hover:scale-105 ripple">Start
+                Free Trial</button>
+        </div>
+
+        <div class="hero-img md:w-1/2 z-10 mt-10 md:mt-0" data-aos="fade-left">
+            <img src="assets/hero.jpg" class="w-full max-w-lg rounded-xl shadow-2xl pointer-events-none"
+                alt="Hero Illustration">
+        </div>
+    </section>
+    <!-- BENEFITS -->
+    <section id="benefits" class="py-32 px-8 md:px-32 bg-gray-800 text-white">
+        <h2 class="text-4xl font-bold text-center mb-16" data-aos="fade-up">Why Choose outreachxpert?</h2>
+        <div class="grid md:grid-cols-3 gap-12">
+            <div class="benefit-card bg-gray-700 p-8 rounded-2xl text-center transform hover:scale-105 transition"
+                data-aos="fade-up">
+                <h3 class="text-2xl font-semibold mb-4">Save Time</h3>
+                <p>Automate repetitive tasks and focus on growing your business.</p>
+            </div>
+            <div class="benefit-card bg-gray-700 p-8 rounded-2xl text-center transform hover:scale-105 transition"
+                data-aos="fade-up" data-aos-delay="100">
+                <h3 class="text-2xl font-semibold mb-4">Boost Efficiency</h3>
+                <p>Get actionable insights to make smarter marketing decisions.</p>
+            </div>
+            <div class="benefit-card bg-gray-700 p-8 rounded-2xl text-center transform hover:scale-105 transition"
+                data-aos="fade-up" data-aos-delay="200">
+                <h3 class="text-2xl font-semibold mb-4">Grow Revenue</h3>
+                <p>Reach more customers and increase conversions effortlessly.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATS -->
+    <section id="stats" class="py-32 px-8 md:px-32">
+        <div class="grid md:grid-cols-4 gap-12 text-center">
+            <div data-aos="fade-up">
+                <h3 class="text-5xl font-bold text-purple-500" data-counter="10000">0</h3>
+                <p class="mt-2">Active Users</p>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="100">
+                <h3 class="text-5xl font-bold text-purple-500" data-counter="120">0</h3>
+                <p class="mt-2">Features</p>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="200">
+                <h3 class="text-5xl font-bold text-purple-500" data-counter="99">0</h3>
+                <p class="mt-2">Uptime (%)</p>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="300">
+                <h3 class="text-5xl font-bold text-purple-500" data-counter="50">0</h3>
+                <p class="mt-2">Countries</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features" class="py-32 px-8 md:px-32">
+        <h2 class="text-4xl font-bold text-center mb-16" data-aos="fade-up">Powerful Features</h2>
+        <div class="grid md:grid-cols-3 gap-12">
+            <div class="feature-card bg-gray-800 rounded-3xl p-10 shadow-lg transform transition hover:scale-105 hover:rotate-1"
+                data-aos="zoom-in">
+                <img src="https://via.placeholder.com/64" class="w-16 mb-6 mx-auto" alt="">
+                <h3 class="text-xl font-semibold mb-3 text-center">AI Powered</h3>
+                <p class="text-center">Automation that scales your brand efficiently.</p>
+            </div>
+            <div class="feature-card bg-gray-800 rounded-3xl p-10 shadow-lg transform transition hover:scale-105 hover:-rotate-1"
+                data-aos="zoom-in" data-aos-delay="100">
+                <img src="https://via.placeholder.com/64" class="w-16 mb-6 mx-auto" alt="">
+                <h3 class="text-xl font-semibold mb-3 text-center">Cloud Sync</h3>
+                <p class="text-center">All your work synced across every device instantly.</p>
+            </div>
+            <div class="feature-card bg-gray-800 rounded-3xl p-10 shadow-lg transform transition hover:scale-105 hover:rotate-2"
+                data-aos="zoom-in" data-aos-delay="200">
+                <img src="https://via.placeholder.com/64" class="w-16 mb-6 mx-auto" alt="">
+                <h3 class="text-xl font-semibold mb-3 text-center">Ultra Secure</h3>
+                <p class="text-center">Advanced encryption keeps your data fully protected.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing"
+        class="py-32 px-8 md:px-32 bg-gradient-to-r from-purple-700 to-pink-500 rounded-3xl text-white">
+        <h2 class="text-4xl font-bold text-center mb-16" data-aos="fade-up">Simple Pricing</h2>
+        <div class="grid md:grid-cols-3 gap-12">
+            <div class="price-card bg-white text-gray-900 rounded-3xl p-10 shadow-lg text-center transform transition hover:scale-105"
+                data-aos="fade-right">
+                <h3 class="text-2xl font-semibold mb-4">Starter</h3>
+                <p class="text-4xl font-bold mb-6">$9/mo</p>
+                <ul class="mb-6">
+                    <li>Basic features</li>
+                    <li>Email support</li>
+                </ul>
+                <button
+                    class="px-6 py-2 bg-purple-600 text-white rounded-full hover:bg-purple-500 transition ripple">Choose
+                    Plan</button>
+            </div>
+            <div class="price-card bg-white text-gray-900 rounded-3xl p-10 shadow-2xl text-center transform scale-105"
+                data-aos="fade-up">
+                <h3 class="text-2xl font-semibold mb-4">Pro</h3>
+                <p class="text-4xl font-bold mb-6">$29/mo</p>
+                <ul class="mb-6">
+                    <li>Everything in Starter</li>
+                    <li>Unlimited access</li>
+                    <li>Priority support</li>
+                </ul>
+                <button
+                    class="px-6 py-2 bg-purple-700 text-white rounded-full hover:bg-purple-600 transition ripple">Choose
+                    Plan</button>
+            </div>
+            <div class="price-card tt5" data-aos="fade-left">
+                <h3 class="text-2xl font-semibold mb-4">Enterprise</h3>
+                <p class="text-4xl font-bold mb-6">$99/mo</p>
+                <ul class="mb-6">
+                    <li>Custom integrations</li>
+                    <li>Dedicated manager</li>
+                </ul>
+                <button
+                    class="px-6 py-2 bg-purple-600 text-white rounded-full hover:bg-purple-500 transition ripple">Choose
+                    Plan</button>
+            </div>
+        </div>
+    </section>
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="py-32 px-8 md:px-32 bg-gray-900 text-white">
+        <h2 class="text-4xl font-bold text-center mb-16" data-aos="fade-up">What Our Customers Say</h2>
+        <div class="grid md:grid-cols-3 gap-12">
+            <div class="testimonial-card bg-gray-800 p-8 rounded-2xl text-center transform hover:scale-105 transition"
+                data-aos="fade-up">
+                <p class="mb-4">"outreachxpert helped our team save so much time and increase productivity!"</p>
+                <h4 class="font-semibold">Jane D.</h4>
+                <p class="text-gray-400 text-sm">Marketing Manager</p>
+            </div>
+            <div class="testimonial-card bg-gray-800 p-8 rounded-2xl text-center transform hover:scale-105 transition"
+                data-aos="fade-up" data-aos-delay="100">
+                <p class="mb-4">"The automation and insights have been a game-changer for our business."</p>
+                <h4 class="font-semibold">Mark S.</h4>
+                <p class="text-gray-400 text-sm">CEO</p>
+            </div>
+            <div class="testimonial-card bg-gray-800 p-8 rounded-2xl text-center transform hover:scale-105 transition"
+                data-aos="fade-up" data-aos-delay="200">
+                <p class="mb-4">"I can’t imagine running campaigns without outreachxpert now!"</p>
+                <h4 class="font-semibold">Lisa K.</h4>
+                <p class="text-gray-400 text-sm">Business Owner</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SIGNUP MODAL -->
+    <div id="signupModal" class="fixed inset-0 bg-black/70 flex items-center justify-center hidden z-50">
+        <div class="bg-gray-900 p-8 rounded-2xl w-96 text-white relative">
+            <button id="closeModal" class="absolute top-4 right-4 text-gray-400 hover:text-white">×</button>
+            <h3 class="text-2xl font-bold mb-4">Start Your Free Trial</h3>
+            <form id="signupForm">
+                <input type="text" name="name" placeholder="Your Name" class="w-full p-3 rounded-lg mb-4 text-black"
+                    required />
+                <input type="email" name="email" placeholder="Your Email" class="w-full p-3 rounded-lg mb-4 text-black"
+                    required />
+                <input type="tel" name="phone" placeholder="Your Phone" class="w-full p-3 rounded-lg mb-4 text-black"
+                    required pattern="[0-9]{10}" />
+                <button type="submit"
+                    class="w-full bg-purple-500 py-3 rounded-lg hover:bg-purple-400 transition">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- TEAM -->
+    <section id="team" class="py-32 px-8 md:px-32">
+        <h2 class="text-4xl font-bold text-center mb-16" data-aos="fade-up">Meet the Team</h2>
+        <div class="grid md:grid-cols-3 gap-12">
+            <div class="team-card bg-gray-800 rounded-3xl p-6 text-center transform hover:scale-105 transition"
+                data-aos="zoom-in">
+                <img src="https://via.placeholder.com/150" class="rounded-full mx-auto mb-4" alt="Member">
+                <h3 class="text-xl font-semibold mb-2">An</h3>
+                <p>CEO & Founder</p>
+            </div>
+            <div class="team-card bg-gray-800 rounded-3xl p-6 text-center transform hover:scale-105 transition"
+                data-aos="zoom-in" data-aos-delay="100">
+                <img src="https://via.placeholder.com/150" class="rounded-full mx-auto mb-4" alt="Member">
+                <h3 class="text-xl font-semibold mb-2">B</h3>
+                <p>CTO</p>
+            </div>
+            <div class="team-card bg-gray-800 rounded-3xl p-6 text-center transform hover:scale-105 transition"
+                data-aos="zoom-in" data-aos-delay="200">
+                <img src="https://via.placeholder.com/150" class="rounded-full mx-auto mb-4" alt="Member">
+                <h3 class="text-xl font-semibold mb-2">C</h3>
+                <p>Lead Designer</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="py-32 px-8 md:px-32">
+        <h2 class="text-4xl font-bold text-center mb-16" data-aos="fade-up">Frequently Asked Questions</h2>
+        <div class="max-w-2xl mx-auto">
+            <div class="faq-item border-b border-gray-700 py-4">
+                <button class="faq-question w-full text-left flex justify-between items-center">
+                    What is outreachxpert?
+                    <span>+</span>
+                </button>
+                <p class="faq-answer hidden mt-2 text-gray-400">outreachxpert is a modern SaaS platform to automate your
+                    business workflow.</p>
+            </div>
+            <div class="faq-item border-b border-gray-700 py-4">
+                <button class="faq-question w-full text-left flex justify-between items-center">
+                    How much does it cost?
+                    <span>+</span>
+                </button>
+                <p class="faq-answer hidden mt-2 text-gray-400">Pricing starts from $9/month and scales based on
+                    features.</p>
+            </div>
+        </div>
+    </section>
+    <div id="startTrialBtn" class="fixed bottom-4 right-4 bg-purple-600 text-white px-6 py-3 rounded-full shadow-lg
+    hover:bg-purple-500 cursor-pointer z-50 animate-bounce ripple">
+        Start Free Trial
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="py-12 text-center bg-gray-900">
+        <p>© 2025 outreachxpert Inc. All rights reserved.</p>
+    </footer>
+
+    <!-- STICKY CTA -->
+    <div id="startTrialBtn"
+        class="fixed bottom-4 right-4 bg-purple-600 text-white px-6 py-3 rounded-full shadow-lg hover:bg-purple-500 cursor-pointer z-50 animate-bounce ripple">
+        Start Free Trial
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        tsParticles.load("particles-js", {
+            particles: {
+                number: { value: 80 },
+                size: { value: 3 },
+                color: { value: "#ffffff" },
+                move: { enable: true, speed: 1.5, direction: "none", random: false, straight: false },
+                opacity: { value: 0.7 },
+                links: { enable: true, distance: 150, color: "#ffffff", opacity: 0.3, width: 1 }
+            },
+            interactivity: {
+                events: {
+                    onhover: { enable: true, mode: "repulse" },
+                    onclick: { enable: true, mode: "push" }
+                }
+            },
+            retina_detect: true
+        });
+
+    </script>
+</body>
+
+</html>
